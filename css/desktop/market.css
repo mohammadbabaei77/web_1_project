@@ -1,0 +1,50 @@
+.market {
+    width: var(--width);
+    height: 125px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+
+    .market__wrapper {
+        width: var(--width);
+        max-width: var(--max-width);
+        height: inherit;
+        display: flex;
+        justify-content: center;
+    
+        .market__center {
+            width: 90%;
+            height: inherit;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-between;
+            align-items: center;
+    
+    
+            & a {
+                width: 70px;
+                height: 70px;
+                text-decoration: none;
+    
+                & div {
+                    width: var(--width);
+                    height: inherit;
+                    display: flex;
+                    flex-flow: column;
+                    align-items: center;
+                    
+                    & img {
+                        width: 54px;
+                        height: 54px;
+                        margin-bottom: 5px;
+                    }
+    
+                    & h5 {
+                        font-family: IRAN;
+                        font-size: 11px;
+                    }
+                }
+            }
+        }
+    }
+}

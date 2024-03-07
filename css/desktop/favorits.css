@@ -1,0 +1,86 @@
+.favorits {
+  width: var(--width);
+  height: 225px;
+  margin-bottom: 15px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+
+  .wrapper {
+    width: var(--width);
+    max-width: var(--max-width);
+    height: inherit;
+    border: 1px solid #E0E0E2;
+    border-radius: 20px;
+
+    .top {
+      width: var(--width);
+      height: 75px;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+      align-items: center;
+      column-gap: 10px;
+
+      &h2 {
+        font-family: IRAN;
+      }
+    }
+
+    .bottom {
+      width: var(--width);
+      height: 150px;
+
+      .slids {
+        width: var(--width);
+        height: 120px;
+
+        .swiper {
+          width: 100%;
+          height: 100%;
+        }
+
+        .swiper-slide {
+          text-align: center;
+          font-size: 18px;
+          background: #fff;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-left: 1px solid #f0f0f1;
+
+          &a {
+            width: var(--width);
+            height: inherit;
+          }
+        }
+
+        .last {
+          border-left: unset;
+        }
+
+        .swiper-slide img {
+          display: block;
+          width: 110px;
+          height: 110px;
+          object-fit: cover;
+        }
+
+        .swiper__button__favorit {
+          background-color: #ffffff;
+          color: #7a7e84;
+          border-radius: 50%;
+          width: 40px;
+          height: 40px;
+        }
+
+        .swiper-button-prev:after,
+        .swiper-button-next:after {
+          font-size: 10px;
+          color: #424750;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}

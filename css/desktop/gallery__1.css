@@ -1,0 +1,28 @@
+.gallery__1 {
+  width: var(--width);
+  height: 240px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+
+  .wrapper {
+    width: var(--width);
+    max-width: var(--max-width);
+    height: inherit;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+
+    & a {
+      width: 320px;
+      height: inherit;
+
+      & img {
+        width: inherit;
+        height: inherit;
+        border-radius: 16px;
+      }
+    }
+  }
+}

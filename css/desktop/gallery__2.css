@@ -1,0 +1,29 @@
+.gallery__2 {
+  width: var(--width);
+  height: 265px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin-top: 60px;
+  margin-bottom: 40px;
+
+  .wrapper {
+    width: var(--width);
+    max-width: var(--max-width);
+    height: inherit;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+
+    & a {
+      width: 660px;
+      height: inherit;
+
+      & img {
+        width: inherit;
+        height: inherit;
+        border-radius: 20px;
+      }
+    }
+  }
+}

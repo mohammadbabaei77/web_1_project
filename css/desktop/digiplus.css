@@ -1,0 +1,133 @@
+.digiplus {
+  width: var(--width);
+  height: 390px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin-bottom: 25px;
+  margin-top: 40px;
+
+  .wrapper {
+    width: var(--width);
+    max-width: var(--max-width);
+    height: inherit;
+    background-color: #941b80;
+    border-radius: 20px;
+    padding: 16px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+
+    .right {
+      width: 30%;
+      height: 358px;
+      background-image: url(../../images/digiplus/1.png);
+      background-repeat: no-repeat;
+      background-position: center bottom;
+      background-size: contain;
+      padding-top: 24px;
+      padding-right: 24px;
+
+      .center {
+        font-family: IRAN;
+        font-size: 12px;
+        font-weight: 100;
+        color: #ffffff;
+        padding: 4px 0;
+        cursor: default;
+        user-select: none;
+      }
+
+      .bottom {
+        width: 105px;
+        height: 40px;
+
+        & a {
+          width: var(--width);
+          height: inherit;
+          border: 1px solid #ffffff;
+          border-radius: 8px;
+          text-decoration: none;
+          display: flex;
+          flex-flow: row wrap;
+          justify-content: center;
+          align-items: center;
+          column-gap: 8px;
+
+          & h4 {
+            font-family: IRAN;
+            font-size: 12px;
+            font-weight: 300;
+            color: #ffffff;
+          }
+        }
+      }
+    }
+
+    .left {
+      width: 69%;
+      height: 358px;
+      border-radius: 8px;
+      background-color: #ffffff;
+      padding: 0 16px;
+
+      .top {
+        width: var(--width);
+        height: 65px;
+        padding: 16px 0;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: center;
+
+        .right__sub {
+          display: flex;
+          flex-flow: row wrap;
+          align-items: center;
+          column-gap: 8px;
+          cursor: default;
+          user-select: none;
+        }
+
+        .left__sub a {
+          text-decoration: none;
+          display: flex;
+          flex-flow: row-reverse wrap;
+          align-items: center;
+          column-gap: 5px;
+
+          & h5 {
+            font-family: IRAN;
+            font-size: 12px;
+            font-weight: 100;
+            color: #b12ba4;
+          }
+        }
+      }
+
+      .bottom {
+        width: var(--width);
+        height: 280px;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+        padding-bottom: 20px;
+        column-gap: 30px;
+
+        .product {
+          width: 116px;
+          height: 116px;
+          & a {
+            width: 116px;
+            height: 116px;
+
+            & img {
+              width: 116px;
+              height: 116px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,10 @@
+.amazing__baner {
+  width: var(--width);
+  background-color: #ef4056;
+  height: 65px;
+  text-align: center;
+  line-height: 65px;
+}
+.amazing__main__slider {
+    width: var(--width);
+}
